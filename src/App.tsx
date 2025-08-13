@@ -8,6 +8,7 @@ import EmissionComparison from "./components/EmissionComparison";
 import LoadingSpinner from "./components/LoadingSpinner";
 import { calculateEcoRoute } from "./services/routeService";
 import { RouteData, RouteRequest } from "./types";
+import Chatbot from "./components/Chatbot";
 
 function App() {
   const [routeData, setRouteData] = useState<RouteData | null>(null);
@@ -79,6 +80,9 @@ function App() {
           </div>
         </div>
       </main>
+
+      {/* Floating Chatbot */}
+      <Chatbot />
     </div>
   );
 }
